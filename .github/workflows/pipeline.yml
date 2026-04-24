@@ -1,0 +1,14 @@
+name: DE Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-basic-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Pipeline is running"
